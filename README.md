@@ -15,3 +15,5 @@
   <li>Determening salaries</li>
   <li>Advanced timereporting</li>
 </ul>
+
+<h3> StopWatch is build using the MEAN stack </h3>
