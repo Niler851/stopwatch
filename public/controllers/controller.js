@@ -29,6 +29,8 @@ index.controller("IndexController", function($scope,$http){
 		$http.post('/contactlist', $scope.index.contact).success(function(res){
 			console.log("Contact added to database");
 			console.log(res);
+			$scope.index.reply="Thank you for signing up!";
+
 		});
 	};
 });
