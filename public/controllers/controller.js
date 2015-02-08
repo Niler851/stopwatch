@@ -1,6 +1,8 @@
-var app = angular.module("app", []);
+(function(){
+var contactlist = angular.module("contactlist", []);
+var index = angular.module("index", []);
 
-app.controller("tableCtrl", function ($scope, $http) {
+contactlist.controller("TableController", function ($scope, $http) {
 
 	$http.get('/contactlist').success(function(res){
 		console.log("data requested sent back");
@@ -8,3 +10,9 @@ app.controller("tableCtrl", function ($scope, $http) {
 	});
 
 });
+
+index.controller("IndexController", function($scope){
+	console.log("herp derp index");
+});
+
+})();

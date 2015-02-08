@@ -1,4 +1,4 @@
-<html ng-app>
+<html ng-app="index" >
 <head>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
@@ -7,14 +7,18 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:400,900italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="main.css">
+
     <!-- Latest compiled and minified JavaScript -->
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular.min.js"></script>
-    <script src="/controllers/controllers.js"></script>
+    <script src="controllers/controller.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
+<body ng-controller="IndexController as index">
 <div class="background-image-overlay"></div>
 <div class="container">
                 <div class="page-header">
@@ -24,16 +28,15 @@
                 <p class="form-title">
                     Sign up
                 </p>
-                <form class="signup">
-                        <input type="text" placeholder="Full Name" ng-model="name" />
+                <form class="signup" >
+                        <input type="text" placeholder="Full Name" ng-model="index.contact.name"/>
                         <input type="text" placeholder="Email" />
                         <input type="submit" value="Sign up" class="btn btn-success btn-sm" />
                 </form>
             </div>
             <div class="col-md-12">
                 <h2 class="titletext smaller">Welcome</h2>
-                <h2 class="titletext smaller">{{name}}</h2>
+                <h2 class="titletext smaller" >{{index.contact.name}}</h2>
             </div>
-</div>
 </body>
 </html>
