@@ -61,7 +61,7 @@ form
     margin: 0 auto;
 }
 
-form.signup input[type="text"]
+form.signup input[type="text"], input[type="email"]
 {
     width: 100%;
     margin: 0;

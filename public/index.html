@@ -24,17 +24,17 @@
                 <div class="page-header">
                     <h1 class="titletext">STOPWATCH</h1>
                 </div>
-            <div class="col-md-12" style="margin-top:-30px; margin-bottom:20px;">
+            <div class="col-sm-12" style="margin-top:-30px; margin-bottom:20px;">
                 <p class="form-title">
                     Sign up
                 </p>
                 <form class="signup" >
                         <input type="text" placeholder="Full Name" ng-model="index.contact.name"/>
-                        <input type="text" placeholder="Email" />
-                        <input type="submit" value="Sign up" class="btn btn-success btn-sm" />
+                        <input type="email" placeholder="Email" ng-model="index.contact.email" required/>
+                        <input type="submit" value="Sign up" class="btn btn-success btn-sm" ng-click="addContact()"/>
                 </form>
             </div>
-            <div class="col-md-12">
+            <div class="col-sm-12">
                 <h2 class="titletext smaller">Welcome</h2>
                 <h2 class="titletext smaller" >{{index.contact.name}}</h2>
             </div>
