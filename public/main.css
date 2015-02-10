@@ -99,3 +99,10 @@ form.signup input[type="submit"]:hover
 {
     transition: background-color 0.2s ease;
 }
+
+input:required {
+    box-shadow:none;
+}
+input:invalid {
+    box-shadow:none;
+}
