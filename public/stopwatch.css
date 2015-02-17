@@ -1,0 +1,14 @@
+#top
+{
+    width:100%;
+    min-height:20%;
+    z-index:-1;
+    background-color: #333;
+}
+
+#main
+{
+	background-color:#F44;
+	width:100%;
+	min-height: 80%;
+}
